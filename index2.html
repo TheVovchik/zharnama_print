@@ -17,7 +17,7 @@
 <header class="header">
     <div class="header__body">
     <nav class="header__nav">
-        <a href="#" class="header__logo">
+        <a href="index.html" class="header__logo">
             <img 
             src="./images/logo.png" 
             alt="main-logo_img" 
@@ -25,13 +25,13 @@
             >
         </a>
         <div class="header__list">
-            <a href="index.html #aboutus" class="header__aboutus">
+            <a href="index.html#aboutus" class="header__aboutus">
             О нас
             </a>
-            <a href="index.html #services" class="header__service">
+            <a href="index.html#services" class="header__service">
             Услуги
             </a>
-            <a href="index.html #products" class="header__products">
+            <a href="index.html#products" class="header__products">
             Продукция
             </a>
             <a href="#contacts" class="header__contacts">
@@ -51,19 +51,19 @@
         </a>
         </div>
         <div class="header__socials">
-            <a href="#" class="header__whatsup">
+            <a href="https://wa.me/" target="_blank" class="header__whatsup">
                 <img 
                 src="./icons/whatsup_white.png" 
                 alt="main-socials_whatsup" 
                 class="header__socialimg">
             </a>
-            <a href="#" class="header__insta">
+            <a href="https://instagram.com/" target="_blank" class="header__insta">
                 <img 
                 src="./icons/insta_white.png" 
                 alt="main-socials_insta" 
                 class="header__socialimg">
             </a>
-            <a href="#" class="header__fb">
+            <a href="https://facebook.com/" target="_blank" class="header__fb">
                 <img 
                 src="./icons/facebook_white.png" 
                 alt="main-socials_facebook" 
@@ -83,7 +83,22 @@
     </div>
 </header>
 <main class="main">
-
+<div class="main__formbox">
+<p class="main__title">Оставить заявку на сайте</p>
+<form action="#" class="main__form">
+    <input required type="text" id="name" name="name" placeholder="Имя" >
+    <input required type="tel" id="phonenamber" name="phonenamber" placeholder="Телефон">
+    <input required type="email" id="Email" name="Email" placeholder="Email">
+    <textarea name="addtext" id="addtext" cols="1" rows="1" placeholder="Краткое описание заказа"></textarea>
+    <div class="main__failload">
+        <label id="file__upload" for="maket" class="custom-file-upload">Загрузить макет
+        <input class="file__input" type="file" name="maket" id="maket" multiple onchange="processSelectedFiles(this)">
+        </label>
+        <h4 id="file__name"></h4>
+    </div>
+    <button class="main__btn" type="submit">Отправить</button>
+</form>
+</div>
 </main>
 <footer class="footer">
     <div class="footer__contacts">
@@ -110,7 +125,7 @@
     </div>
     <div class="footer__body">
     <div class="footer__nav">
-        <a href="#" class="footer__logo">
+        <a href="index.html" class="footer__logo">
             <img 
             src="./images/logo.png" 
             alt="main-logo_img" 
@@ -118,13 +133,13 @@
             >
         </a>
         <div class="header__list">
-            <a href="index.html #about_us" class="header__aboutus">
+            <a href="index.html#about_us" class="header__aboutus">
             О нас
             </a>
-            <a href="index.html #services" class="header__service">
+            <a href="index.html#services" class="header__service">
             Услуги
             </a>
-            <a href="index.html #products" class="header__products">
+            <a href="index.html#products" class="header__products">
             Продукция
             </a>
             <a href="#contacts" class="header__contacts">
@@ -132,19 +147,19 @@
             </a>
         </div>
         <div class="header__socials">
-            <a href="#" class="header__whatsup">
+            <a href="https://wa.me/" target="_blank" class="header__whatsup">
                 <img 
                 src="./icons/whatsup_white.png" 
                 alt="main-socials_whatsup" 
                 class="header__socialimg">
             </a>
-            <a href="#" class="header__insta">
+            <a href="https://instagram.com/" target="_blank" class="header__insta">
                 <img 
                 src="./icons/insta_white.png" 
                 alt="main-socials_insta" 
                 class="header__socialimg">
             </a>
-            <a href="#" class="header__fb">
+            <a href="https://facebook.com/" target="_blank" class="header__fb">
                 <img 
                 src="./icons/facebook_white.png" 
                 alt="main-socials_facebook" 
