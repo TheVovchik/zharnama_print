@@ -118,7 +118,7 @@ h6 {
 	min-height: 100px;
 	background: #05022D;
 	display: flex;
-	position: fixed;
+	/* position: fixed; */
 	justify-content: center;
 	align-items: center;
 	z-index: 50;
@@ -558,8 +558,11 @@ h2 {
 
 .main__six{
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	margin: 0 auto;
+	padding-bottom: 30px;
 }
 .main__preferencesonline{
 	width: 52.08vw;
@@ -605,6 +608,30 @@ p.main__icondescr{
 	display: flex;
 	justify-self: center;
 }
+
+/* кнопка на форму */
+
+.body__toform{
+	font-family: 'Open Sans';
+	font-size: 1rem;
+	line-height: 1.5625rem;
+	display: flex;
+	justify-content: center;
+	background: #FCFAFE;
+	box-shadow: 0px 10px 20px 10px rgba(183, 152, 224, 0.5);
+	border-radius: 8px;
+	color: black;
+	padding: 15px;
+	min-width: 47.24vw;
+	-webkit-animation: pulsing 3s infinite;
+	animation: pulsing 3s infinite;
+}
+.body__toform:hover{
+	-webkit-animation: normal;
+	animation: normal;
+}
+
+/* кнопка на форму */
 
 /* Седьмой блок - продукция */
 .main__seven{
@@ -745,34 +772,6 @@ p.main__icondescr{
 	color: #000000;
 }
 
-/* кнопка на форму */
-
-.body__toform{
-	font-family: 'Open Sans';
-	font-size: 1rem;
-	line-height: 1.5625rem;
-	display: flex;
-	position: absolute;
-	top: 45%;
-	right: 40vmax;
-	justify-content: center;
-	text-align: center;
-	background: rgba(183, 152, 224, 0.51);
-	box-shadow: 4px 2px 10px rgba(183, 152, 224, 0.5);
-	border-radius: 8px;
-	color: white;
-	padding: 15px;
-	max-width: 12vmax;
-	height: fit-content;
-	flex: 2 2 auto;
-	-webkit-animation: pulsing 1s infinite;
-	animation: pulsing 1s infinite;
-	z-index: 10;
-}
-.body__toform:hover{
-	-webkit-animation: normal;
-	animation: normal;
-}
 
 /* Ширина 1440px */
 
@@ -834,7 +833,7 @@ p.main__icondescr{
 		line-height: 1.3rem;
 	}
 	.wrapper {
-		overflow:auto;
+		overflow:hidden;
 	}
 	.main__preferencesonline {
 		width: fit-content;
